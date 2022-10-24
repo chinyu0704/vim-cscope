@@ -35,7 +35,7 @@ if has("cscope")
 	nnoremap <C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
 	nmap <C-\><C-\>g :cs f g 
-	nmap <C-\><C-\>s :cs f s
+	nmap <C-\><C-\>s :cs f s 
 	nmap <C-\>k :cprev<CR>
 	nmap <C-\>j :cnext<CR>
 
