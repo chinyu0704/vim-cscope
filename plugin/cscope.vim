@@ -1,6 +1,6 @@
 function! QuickfixGoto()
-	let entry = input('Enter quickfix entry number: ')
-	execute 'cc' . entry
+    let entry = input('Enter quickfix entry number: ')
+    execute 'cc' . entry
 endfunction
 
 
@@ -46,18 +46,16 @@ if has("cscope")
 
 	nmap <C-\><C-\>g :cs f g
 	nmap <C-\><C-\>s :cs f s
-	nmap <C-\>k :cprev<CR>
-	nmap <C-\>j :cnext<CR>
 
 	nmap <C-\><C-\>d :cs f d
 	nmap <C-\><C-\>c :cs f c
 	nmap <C-\><C-\>a :cs f a
 	nmap <C-p> :cprev<CR>
 	nmap <C-n> :cnext<CR>
-	nmap <C-\><C-j>g :cbel<CR>
-	nmap <C-\><C-k>g :cabo<CR>
-	nmap <C-\><C-h>g :cr<CR>
-	nmap <C-\><C-l>g :cla<CR>
+	nmap <C-\><C-j> :cbel<CR>
+	nmap <C-\><C-k> :cabo<CR>
+	nmap <C-\><C-h> :cr<CR>
+	nmap <C-\><C-l> :cla<CR>
 	nmap <C-l> :cl<CR>
 	nnoremap <C-h> :call QuickfixGoto()<CR>
 
