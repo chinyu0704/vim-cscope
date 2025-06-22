@@ -44,11 +44,11 @@ if has("cscope")
 	nnoremap <C-]>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 	nnoremap <C-]>a :vert scs find a <C-R>=expand("<cword>")<CR><CR>
 
-	nmap <C-\><C-\>g :cs f g
-	nmap <C-\><C-\>s :cs f s
-	nmap <C-\><C-\>d :cs f d
-	nmap <C-\><C-\>c :cs f c
-	nmap <C-\><C-\>a :cs f a
+	nmap <C-\><C-\>g :cs f g  " intentional left space
+	nmap <C-\><C-\>s :cs f s 
+	nmap <C-\><C-\>d :cs f d 
+	nmap <C-\><C-\>c :cs f c 
+	nmap <C-\><C-\>a :cs f a 
 	nmap <C-p> :cprev<CR>
 	nmap <C-n> :cnext<CR>
 	nmap <C-\><C-j> :cbel<CR>
